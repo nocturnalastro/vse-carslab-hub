@@ -4,7 +4,4 @@ kind: Kustomization
 
 resources:
   - github.com/redhat-cop/gitops-catalog/openshift-gitops-operator/overlays/latest?ref=main
-  - ../../../components/applicationsets
-# - ../../../components/argocdproj
-  - openshift-gitops-argocd.yaml
   - openshift-gitops-rbac-policy.yaml
