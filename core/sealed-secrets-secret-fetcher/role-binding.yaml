@@ -8,5 +8,5 @@ subjects:
     name: sectets-fetcher
 roleRef:
   kind: Role
-  name: managed-secrets
+  name: replace-sealed-secrets-secret
   apiGroup: rbac.authorization.k8s.io
