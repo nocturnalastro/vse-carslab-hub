@@ -4,7 +4,7 @@ metadata:
   name: replace-sealed-secrets-secret
   namespace: sealed-secrets
 rules:
-  - apiGroups: [extensions]
+  - apiGroups: ["", "extensions"]
     resources:
       - secrets
       - pods
