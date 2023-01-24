@@ -1,0 +1,11 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: managed-secrets-to-sa
+subjects:
+  - kind: ServiceAccount
+    name: sectets-fetcher
+roleRef:
+  kind: Role
+  name: managed-secrets
+  apiGroup: rbac.authorization.k8s.io

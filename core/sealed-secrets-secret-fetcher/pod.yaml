@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sealed-secrets-secret-fetcher
+spec:
+  containers:
+    - name: sealed-secrets-secret-fetcher
+      image: registry.cars.lab:5000:testing/sealed-secrets-secret-fetcher:latest
+      env:
+        - name: SEALED_SECRTET_PAYLOAD_URL
+          value: registry.cars.lab/sealed-secrests-secret.tar.gz
