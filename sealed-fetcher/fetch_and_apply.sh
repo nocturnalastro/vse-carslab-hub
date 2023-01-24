@@ -22,3 +22,6 @@ oc create -f ./sealed-secrets-secret.yaml -n sealed-secrets
 
 echo "Restarting Sealed Secrets controller."
 oc delete pod -l name=sealed-secrets-controller -n sealed-secrets
+
+
+echo "Complete"
