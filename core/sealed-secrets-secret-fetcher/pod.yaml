@@ -5,7 +5,6 @@ metadata:
   namespace: sealed-secrets
 spec:
   serviceAccount: sectets-fetcher
-  restartPolicy: OnFailure
   containers:
     - name: sealed-secrets-secret-fetcher
       image: registry.cars.lab:5000/testing/sealed-secrets-secret-fetcher:latest
