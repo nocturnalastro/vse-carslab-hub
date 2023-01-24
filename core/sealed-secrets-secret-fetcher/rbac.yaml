@@ -4,10 +4,11 @@ metadata:
   name: replace-sealed-secrets-secret
   namespace: sealed-secrets
 rules:
-  - apiGroups: [""]
+  - apiGroups: [extensions]
     resources:
       - secrets
       - pods
+      - deployments
     verbs:
       - get
       - list
