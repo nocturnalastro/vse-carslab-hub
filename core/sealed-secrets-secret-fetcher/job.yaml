@@ -1,0 +1,19 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: fetch-sealed-secrets-secret
+  namespace: sealed-secrets
+spec:
+  template:
+    spec:
+      containers:
+        - name: sealed-secrets-secret-fetcher
+          image: registry.cars.lab:5000/testing/sealed-secrets-secret-fetcher:latest
+          env:
+            - name: SEALED_SECRTET_PAYLOAD_URL
+              value: registry.cars.lab/sealed-secrests-secret.tar.gz
+      dnsPolicy: ClusterFirst
+      restartPolicy: OnFailure
+      serviceAccountName: sectets-fetcher
+      terminationGracePeriodSeconds: 30

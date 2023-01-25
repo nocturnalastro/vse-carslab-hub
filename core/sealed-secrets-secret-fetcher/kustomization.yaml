@@ -6,4 +6,4 @@ resources:
   - service-account.yaml
   - rbac.yaml
   - role-binding.yaml
-  - pod.yaml
+  - job.yaml
