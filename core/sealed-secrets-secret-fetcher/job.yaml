@@ -7,8 +7,6 @@ metadata:
 spec:
   template:
     spec:
-      serviceAccount: sectets-fetcher
-      namespace: sealed-secrets
       containers:
         - name: sealed-secrets-secret-fetcher
           image: registry.cars.lab:5000/testing/sealed-secrets-secret-fetcher:latest
@@ -17,6 +15,6 @@ spec:
               value: registry.cars.lab/sealed-secrests-secret.tar.gz
       dnsPolicy: ClusterFirst
       restartPolicy: OnFailure
-      # serviceAccountName: sectets-fetcher
+      serviceAccountName: sectets-fetcher
       terminationGracePeriodSeconds: 30
       backoffLimit: 100
