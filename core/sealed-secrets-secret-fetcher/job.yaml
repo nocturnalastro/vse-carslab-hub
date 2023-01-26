@@ -5,6 +5,7 @@ metadata:
   name: fetch-sealed-secrets-secret
   namespace: sealed-secrets
 spec:
+  backoffLimit: 100
   template:
     spec:
       containers:
@@ -17,4 +18,3 @@ spec:
       restartPolicy: OnFailure
       serviceAccountName: sectets-fetcher
       terminationGracePeriodSeconds: 30
-      backoffLimit: 100
