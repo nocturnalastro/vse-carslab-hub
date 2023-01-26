@@ -26,4 +26,4 @@ oc delete pod -l name=sealed-secrets-controller -n sealed-secrets
 
 echo "Complete"
 
-sleep infinity
+# sleep infinity
