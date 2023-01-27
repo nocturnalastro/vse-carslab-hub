@@ -11,6 +11,9 @@ spec:
       containers:
         - name: sealed-secrets-secret-fetcher
           image: registry.cars.lab:5000/testing/sealed-secrets-secret-fetcher:latest
+          volumeMounts:
+            - mountPath: "/fetched"
+              name: fetched-volume
           env:
             - name: SEALED_SECRTET_PAYLOAD_URL
               value: registry.cars.lab/sealed-secrests-secret.tar.gz
@@ -18,3 +21,16 @@ spec:
       restartPolicy: OnFailure
       serviceAccountName: sectets-fetcher
       terminationGracePeriodSeconds: 30
+      volumes:
+        - name: fetched-volume
+          ephemeral:
+            volumeClaimTemplate:
+              metadata:
+                labels:
+                  type: ss-fetcher-volume
+              spec:
+                accessModes: [ "ReadWriteOnce" ]
+                storageClassName: "lso-filesystemclass"
+                resources:
+                  requests:
+                    storage: 1Gi

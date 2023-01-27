@@ -11,6 +11,7 @@ RUN dnf update -y; \
     chmod +x /usr/local/bin/replace-sealed-secrets-secret
 
 COPY fetch_and_apply.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/fetch_and_apply.sh
-
+RUN chmod +x /usr/local/bin/fetch_and_apply.sh;
+    mkdir /fetched
+WORKDIR /fetched
 CMD "fetch_and_apply.sh"
