@@ -10,7 +10,7 @@ spec:
         repoURL: https://github.com/redhat-partner-solutions/vse-carslab-hub
         revision: main
         directories:
-          - path: clusters/overlays/*
+          - path: clusters/overlays/volante
   template:
     metadata:
       name: '{{path.basename}}'

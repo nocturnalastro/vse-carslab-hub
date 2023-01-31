@@ -3,6 +3,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - core-components-appset.yaml
-  - clusters
-  #- worker-nodes-appset.yaml
+  - blazer-appset.yaml
+  - volante-appset.yml
+  - yukon-cars2-appset.yml
+  
