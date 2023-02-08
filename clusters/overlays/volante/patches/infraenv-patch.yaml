@@ -1,7 +1,3 @@
----
-- op: replace
-  path: /spec/additionalNTPSources
-  value: ['registry.cars.lab', 'fd00:6:6:11::52']
 - op: replace
   path: /spec/clusterRef/name
   value: 'volante-cars-lab'
@@ -16,7 +12,4 @@
   value: 'assisted-deployment-pull-secret'
 - op: replace
   path: /metadata/name
-  value: infraenv
-- op: replace
-  path: '/spec/nmStateConfigLabelSelector/matchLabels/cluster-name'
-  value: 'volante-nmstate'
+  value: volante-cars-lab-infraenv
