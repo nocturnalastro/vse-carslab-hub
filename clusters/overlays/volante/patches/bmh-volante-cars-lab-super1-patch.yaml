@@ -11,7 +11,7 @@
   value: volante-cars-lab-bmc-super1
 - op: replace
   path: /metadata/labels/infraenvs.agent-install.openshift.io
-  value: infraenv
+  value: volante-cars-lab-infraenv
 - op: replace
   path: /metadata/name
   value: volante-cars-lab-super1
