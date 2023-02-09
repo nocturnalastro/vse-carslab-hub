@@ -8,9 +8,10 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/redhat-partner-solutions/vse-carslab-hub
-        revision: main
+        revision: deploy_volante
         directories:
-          - path: add-workers/*
+          - path: add-workers/du3-ldc1
+          - path: add-workers/du4-ldc1
   template:
     metadata:
       name: '{{path.basename}}'
@@ -28,7 +29,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/redhat-partner-solutions/vse-carslab-hub
-        targetRevision: main
+        targetRevision: deploy_volante
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
