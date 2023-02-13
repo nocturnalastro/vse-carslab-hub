@@ -11,6 +11,8 @@ spec:
         revision: crucible_post_install
         directories:
           - path: core/*
+          - path: core/sealed-secrets-secret-fetcher
+            exclude: true
   template:
     metadata:
       name: '{{path.basename}}'
