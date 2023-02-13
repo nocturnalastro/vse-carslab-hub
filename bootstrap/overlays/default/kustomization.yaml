@@ -5,4 +5,4 @@ kind: Kustomization
 resources:
   - github.com/redhat-cop/gitops-catalog/openshift-gitops-operator/overlays/latest?ref=main
   - openshift-gitops-rbac-policy.yaml
-  - ../../post_install_config
+  - ../../../post_install_config
