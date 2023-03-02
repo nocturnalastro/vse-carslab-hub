@@ -16,7 +16,7 @@
   value: 'assisted-deployment-pull-secret'
 - op: replace
   path: /metadata/name
-  value: infraenv
+  value: volante-cars-lab-infraenv
 - op: replace
   path: '/spec/nmStateConfigLabelSelector/matchLabels/cluster-name'
   value: 'volante-nmstate'
