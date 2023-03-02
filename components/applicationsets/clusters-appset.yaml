@@ -8,7 +8,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/nocturnalastro/vse-carslab-hub
-        revision: deploy_volante
+        revision: deploy_volante_and_pipeline
         directories:
           - path: clusters/overlays/volante
   template:
@@ -28,7 +28,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/nocturnalastro/vse-carslab-hub
-        targetRevision: deploy_volante
+        targetRevision: deploy_volante_and_pipeline
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
