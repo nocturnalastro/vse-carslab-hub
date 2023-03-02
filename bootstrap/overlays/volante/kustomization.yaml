@@ -8,4 +8,4 @@ resources:
   - github.com/redhat-partner-solutions/vse-catalog/components/argocd/overlays/4.12?ref=main
   - openshift-gitops-rbac-policy.yaml
   - ../../../components/argocdproj
-  - ../../../components/applicationsets/overlays/core-only
+  - ../../../components/applicationsets/overlays/volante
