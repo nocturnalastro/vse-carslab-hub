@@ -28,6 +28,10 @@ patches:
       - op: replace
         path: /metadata/name
         value: 'volante-cars-lab'
+      - op: add
+        path: /spec/provisionRequirements
+        value:
+          workerAgents: 2
   - target:
       kind: SealedSecret
       name: assisted-deployment-pull-secret
