@@ -5,6 +5,7 @@ kind: Kustomization
 namespace: vse-cicd-catalog
 
 resources:
+  - namespace.yaml
   - github-sealed.yaml
   - quay-sealed.yaml
   - pipeline-credentials.yaml
