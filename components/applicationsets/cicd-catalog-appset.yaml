@@ -7,8 +7,8 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/redhat-partner-solutions/vse-catalog
-        revision: main
+        repoURL: https://github.com/nocturnalastro/vse-catalog
+        revision: volante
         directories:
           - path: components/tekton/*
           - path: components/tekton/pipelineruns
@@ -29,8 +29,8 @@ spec:
             factor: 2
             maxDuration: 5m
       source:
-        repoURL: https://github.com/redhat-partner-solutions/vse-catalog
-        targetRevision: main
+        repoURL: https://github.com/nocturnalastro/vse-catalog
+        targetRevision: volante
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
