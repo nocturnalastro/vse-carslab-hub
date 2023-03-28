@@ -1,0 +1,16 @@
+- op: replace
+  path: /spec/bootMACAddress
+  value: '40:A6:B7:3D:B9:00'
+- op: replace
+  path: /spec/bmc/address
+  # yamllint disable-line rule:line-length
+  value: idrac-virtualmedia://172.28.11.26.03/redfish/v1/Systems/System.Embedded.1
+- op: replace
+  path: /spec/bmc/credentialsName
+  value: venom-cars-lab-bmc-super1
+- op: replace
+  path: /metadata/labels/infraenvs.agent-install.openshift.io
+  value: venom-cars-lab-infraenv
+- op: replace
+  path: /metadata/name
+  value: venom-cars-lab-super1

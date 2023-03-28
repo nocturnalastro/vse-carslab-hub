@@ -1,0 +1,30 @@
+---
+apiVersion: agent-install.openshift.io/v1beta1
+kind: NMStateConfig
+metadata:
+  name: nmstate-super1
+  labels:
+    cluster-name: venom-nmstate
+spec:
+  config:
+    interfaces:
+      - name: enp7s0
+        type: ethernet
+        state: up
+        ipv4:
+          address:
+            - ip: 10.60.0.130
+              prefix-length: 24
+          enabled: true
+    dns-resolver:
+      config:
+        server:
+          - 10.40.0.100
+    routes:
+      config:
+        - destination: 0.0.0.0/0
+          next-hop-address:  10.60.0.1
+          next-hop-interface: enp7s0
+  interfaces:
+    - name: enp7s0
+      macAddress: 40:A6:B7:3D:B9:00

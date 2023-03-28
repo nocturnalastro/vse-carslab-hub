@@ -8,9 +8,9 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/nocturnalastro/vse-carslab-hub
-        revision: deploy_volante_and_pipeline
+        revision: deploy_venom
         directories:
-          - path: clusters/overlays/volante
+          - path: clusters/overlays/venom
   template:
     metadata:
       name: '{{path.basename}}'
@@ -28,7 +28,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/nocturnalastro/vse-carslab-hub
-        targetRevision: deploy_volante_and_pipeline
+        targetRevision: deploy_venom
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
