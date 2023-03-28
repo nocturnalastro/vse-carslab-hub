@@ -5,7 +5,7 @@ kind: Kustomization
 namespace: venom-cars-lab
 # namePrefix: venom-cars-lab-
 
-bases:
+resources:
   - github.com/redhat-partner-solutions/vse-ocp-bases/base/sno?ref=main
 
 patchesStrategicMerge:

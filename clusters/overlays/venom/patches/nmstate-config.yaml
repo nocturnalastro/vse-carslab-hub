@@ -3,6 +3,7 @@ apiVersion: agent-install.openshift.io/v1beta1
 kind: NMStateConfig
 metadata:
   name: nmstate-super1
+  namespace: venom-cars-lab
   labels:
     cluster-name: venom-nmstate
 spec:
