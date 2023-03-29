@@ -41,6 +41,9 @@ patches:
       - op: replace
         path: /metadata/name
         value: 'venom-cars-lab-bmc-super1'
+      - op: replace
+        path: /data/password
+        value 'YWx0aW9zdGFyMTIz'
   - target:
       kind: ManagedCluster
     patch: |-
