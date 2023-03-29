@@ -5,10 +5,8 @@ metadata:
   name: cluster
   namespace: cluster-name
 spec:
-  apiVIP: 10.60.0.130
-  ingressVIP: 10.60.0.130
   clusterDeploymentRef:
-    name: venom-cars-lab
+    name: rna4
   imageSetRef:
     name: img4.11.18-x86-64-appsub
   networking:
