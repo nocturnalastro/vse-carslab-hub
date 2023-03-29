@@ -1,10 +1,10 @@
 - op: replace
   path: /spec/bootMACAddress
-  value: '40:A6:B7:3D:B8:A0'
+  value: '40:A6:B7:3D:B9:00'
 - op: replace
   path: /spec/bmc/address
   # yamllint disable-line rule:line-length
-  value: idrac-virtualmedia://172.28.11.25/redfish/v1/Systems/System.Embedded.1
+  value: idrac-virtualmedia://172.28.11.26/redfish/v1/Systems/System.Embedded.1
 - op: replace
   path: /spec/bmc/credentialsName
   value: venom-cars-lab-bmc-super1
