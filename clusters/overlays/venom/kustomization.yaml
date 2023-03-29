@@ -31,7 +31,7 @@ patches:
         value: 'venom-cars-lab'
   - target:
       kind: SealedSecret
-    patch: ./patches/pullsecret-sealed-patch.yaml
+    path: ./patches/pullsecret-sealed-patch.yaml
   - target:
       kind: Secret
     patch: |-
