@@ -4,7 +4,7 @@
 - op: replace
   path: /spec/bmc/address
   # yamllint disable-line rule:line-length
-  value: idrac-virtualmedia://172.28.11.26.03/redfish/v1/Systems/System.Embedded.1
+  value: idrac-virtualmedia://172.28.11.25/redfish/v1/Systems/System.Embedded.1
 - op: replace
   path: /spec/bmc/credentialsName
   value: venom-cars-lab-bmc-super1
