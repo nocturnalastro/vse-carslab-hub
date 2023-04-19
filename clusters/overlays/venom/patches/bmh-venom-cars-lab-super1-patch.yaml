@@ -16,4 +16,4 @@
   value: venom-cars-lab-super1
 - op: replace
   path: /spec/rootDeviceHints/deviceName
-  value: /dev/sdb
+  value: /dev/sda
