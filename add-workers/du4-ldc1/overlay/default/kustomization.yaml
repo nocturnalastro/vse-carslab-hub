@@ -3,7 +3,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - github.com/nocturnalastro/vse-ocp-bases/base/1-worker?ref=main
+  - github.com/redhat-partner-solutions/vse-ocp-bases/base/1-worker?ref=main
 
 patchesStrategicMerge:
   - ./patches/nmstate-config.yaml

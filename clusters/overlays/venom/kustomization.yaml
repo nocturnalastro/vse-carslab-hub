@@ -6,7 +6,7 @@ namespace: venom-cars-lab
 # namePrefix: venom-cars-lab-
 
 resources:
-  - github.com/nocturnalastro/vse-ocp-bases/base/sno?ref=remove_so_nmstate_fields
+  - github.com/redhat-partner-solutions/vse-ocp-bases/base/sno?ref=remove_so_nmstate_fields
 
 patchesStrategicMerge:
   - ./patches/nmstate-config.yaml

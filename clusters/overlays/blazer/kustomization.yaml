@@ -6,7 +6,7 @@ namespace: blazer-cars-lab
 # namePrefix: blazer-cars-lab-
 
 bases:
-  - github.com/nocturnalastro/vse-ocp-bases/base/3-node?ref=main
+  - github.com/redhat-partner-solutions/vse-ocp-bases/base/3-node?ref=main
 
 patchesStrategicMerge:
   - ./patches/nmstate-config.yaml
