@@ -30,7 +30,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/nocturnalastro/vse-catalog
-        targetRevision: 4.16
+        targetRevision: "4.16"
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc

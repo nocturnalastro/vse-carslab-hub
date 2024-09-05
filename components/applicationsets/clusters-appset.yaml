@@ -8,7 +8,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/nocturnalastro/vse-carslab-hub
-        revision: deploy_venom
+        revision: deploy_cpe03
         directories:
           - path: clusters/overlays/cpe03
   template:
