@@ -8,7 +8,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/nocturnalastro/vse-catalog
-        revision: volante
+        revision: ptp_testsuite_task
         directories:
           - path: components/tekton/*
           - path: components/tekton/pipelineruns
@@ -30,7 +30,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/nocturnalastro/vse-catalog
-        targetRevision: volante
+        targetRevision: 4.16
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc

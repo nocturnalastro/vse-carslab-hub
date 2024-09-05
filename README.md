@@ -6,7 +6,7 @@ All cluster lifecycle is managed by Argo CD, including the Argo configuration it
 In order to successfully use the contents of this repository, you need to have an OpenShift cluster deployed *with* storage available and ready to consume.  The methods of deployment of this OpenShift cluster can be:
 - Red Hat ACM
 - [Baremetal Installer Provisioned Infrastructure](https://docs.openshift.com/container-platform/4.12/installing/installing_bare_metal_ipi/ipi-install-overview.html)
-- [Crucible Ansible Playbooks](https://github.com/redhat-partner-solutions/crucible)
+- [Crucible Ansible Playbooks](https://github.com/nocturnalastro/crucible)
 - [Agent Based Installer](https://docs.openshift.com/container-platform/4.12/installing/installing_with_agent_based_installer/preparing-to-install-with-agent-based-installer.html)
 
 Storage can be provided however you deem fit.  Cloud environments typically have dynamic storage available after OpenShift cluster installation.  The requirements are (2) PersistentVolumes available for consumption by the assisted-service and postgres containers in the assisted-service pod.  A few options exist that we can recommend:
@@ -16,7 +16,7 @@ Storage can be provided however you deem fit.  Cloud environments typically have
 ## How to run it
 ```shell
 export KUBECONFIG=my-hub-cluster-kubeconfig
-until oc apply -k https://github.com/redhat-partner-solutions/vse-carslab-hub/bootstrap/overlays/default; do sleep 3; done
+until oc apply -k https://github.com/nocturnalastro/vse-carslab-hub/bootstrap/overlays/default; do sleep 3; done
 ```
 
 # Structure

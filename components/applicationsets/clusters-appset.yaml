@@ -10,7 +10,7 @@ spec:
         repoURL: https://github.com/nocturnalastro/vse-carslab-hub
         revision: deploy_venom
         directories:
-          - path: clusters/overlays/venom
+          - path: clusters/overlays/cpe03
   template:
     metadata:
       name: '{{path.basename}}'
@@ -28,7 +28,7 @@ spec:
             maxDuration: 5m
       source:
         repoURL: https://github.com/nocturnalastro/vse-carslab-hub
-        targetRevision: deploy_venom
+        targetRevision: deploy_cpe03
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc

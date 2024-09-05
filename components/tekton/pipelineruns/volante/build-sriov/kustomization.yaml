@@ -6,7 +6,7 @@ namespace: vse-cicd-catalog
 
 resources:
   # yamllint disable-line rule:line-length
-  - github.com/redhat-partner-solutions/vse-catalog/components/tekton/pipelineruns/build-test-suite?ref=main
+  - github.com/nocturnalastro/vse-catalog/components/tekton/pipelineruns/build-test-suite?ref=main
 
 patches:
   - target:
