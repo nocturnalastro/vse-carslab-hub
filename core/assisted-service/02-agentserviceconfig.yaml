@@ -73,13 +73,13 @@ spec:
       url: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.12/4.12.3/rhcos-4.12.3-x86_64-live.x86_64.iso
       rootFSUrl: https://mirror.openshift.com/pub/openshift-v4/dependencies/rhcos/4.12/4.12.3/rhcos-4.12.3-x86_64-live-rootfs.x86_64.img
       # yamllint enable rule:line-length
-    - cpu_architecture: x86_64
-      openshift_version: '4.15'
-      rootfs_url: https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.23/rhcos-live-rootfs.x86_64.img
+    - cpuArchitecture: x86_64
+      openshiftVersion: '4.15'
+      rootFSUrl: https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.23/rhcos-live-rootfs.x86_64.img
       url: https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.15/4.15.23/rhcos-4.15.23-x86_64-live.x86_64.iso
       version: 415.92.202407191425-0
-    - cpu_architecture: x86_64
-      openshift_version: '4.16'
-      rootfs_url: https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.16/4.16.3/rhcos-live-rootfs.x86_64.img
+    - cpuArchitecture: x86_64
+      openshiftVersion: '4.16'
+      rootFSUrl: https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.16/4.16.3/rhcos-live-rootfs.x86_64.img
       url: https://mirror.openshift.com/pub/openshift-v4/x86_64/dependencies/rhcos/4.16/4.16.3/rhcos-4.16.3-x86_64-live.x86_64.iso
       version: '416.94.202407081958-0'
